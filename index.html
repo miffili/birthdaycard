@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Birthday, Matt!</title>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card front">
+        <div class="stars"></div>
+        <div class="shooting-star-container">
+          <div class="shooting-star"></div>
+        </div>
+        <div class="tree"></div>
+        <div class="bush"></div>
+        <div class="bush2"></div>
+        <div class="moon"></div>
+        <div class="quote">
+          <p>Imagination will often carry us to worlds that never were. But without it we go nowhere.</p>
+          <p class="quotee">• Carl Sagan •</p>
+        </div>
+      </div>
+
+      <div class="card back invisible">
+        <div class="message">
+          <img src="message.svg" class="message-img" />
+        </div>
+        <div class="devider"><span><> with ♥ by Klara Fleischmann, 2018</span></div>
+        <div class="adress">
+          <img class="stamp" src="stamp.png" alt="Launching rocket">
+          <div class="adress-field">
+            <p>Matthew Smith</p>
+            <p><span>c/o Café Henrici</span></p>
+            <p>Niederdorfstraße 1</p>
+            <p>8001 <span>Zürich</span></p>
+            <p>Schweiz</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="turn" type="button" name="turn">turn card</button>
+    <p class="disclaimer">Best viewn on tablet/desktop 😇</p>
+
+    <script type="text/javascript">
+    const flipBtn = document.querySelector(".turn");
+const front = document.querySelector(".front");
+const back = document.querySelector(".back");
+flipBtn.addEventListener("click", () => {
+  front.classList.toggle("invisible");
+  back.classList.toggle("invisible");
+});
+</script>
+  </body>
+</html>
